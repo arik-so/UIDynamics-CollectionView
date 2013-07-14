@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="nVp-mI-aPY" customClass="SCBouncyCollectionViewFlowLayout">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="10" id="nVp-mI-aPY" customClass="SCBouncyCollectionViewFlowLayout">
                             <size key="itemSize" width="320" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -31,7 +31,7 @@
                                 <size key="customSize" width="320" height="40"/>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="pgP-0o-rNK">
-                                <rect key="frame" x="0.0" y="104" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="109" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -41,7 +41,7 @@
                                 <color key="backgroundColor" red="0.73299507470000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="S0P-au-pVb">
-                                <rect key="frame" x="0.0" y="154" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="164" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -51,7 +51,7 @@
                                 <color key="backgroundColor" red="0.73299507470000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ULj-p6-31S">
-                                <rect key="frame" x="0.0" y="204" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="219" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -61,7 +61,7 @@
                                 <color key="backgroundColor" red="0.73299507470000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="j3M-Ro-OmA">
-                                <rect key="frame" x="0.0" y="254" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="274" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>

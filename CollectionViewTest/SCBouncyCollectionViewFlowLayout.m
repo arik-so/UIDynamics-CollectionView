@@ -32,7 +32,7 @@
             UIAttachmentBehavior *spring = [[UIAttachmentBehavior alloc] initWithItem:currentItem attachedToAnchor:currentItem.center];
             
             spring.length = 0;
-            spring.damping = 0.5;
+            spring.damping = 0.8;
             spring.frequency = 0.8;
             
             [self.dynamicAnimator addBehavior:spring];

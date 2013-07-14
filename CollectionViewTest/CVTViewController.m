@@ -45,6 +45,8 @@
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
+    cell.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    
 // ; // = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
     double max = 0x100000000;

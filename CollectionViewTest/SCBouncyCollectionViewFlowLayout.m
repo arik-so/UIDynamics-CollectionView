@@ -16,10 +16,28 @@
 
 @implementation SCBouncyCollectionViewFlowLayout
 
+- (BOOL)isDynamicsSupported{
+    
+    NSString *minVersion = @"7.0";
+    NSString *version = [UIDevice currentDevice].systemVersion;
+    
+    if ([version compare:minVersion options:NSNumericSearch] != NSOrderedAscending){
+    
+        return YES;
+    
+    }
+        
+        return NO;
+    
+}
+
 - (void)prepareLayout{
+    
     [super prepareLayout];
     
-    // return;
+    if(![self isDynamicsSupported]){
+        return;
+    }
     
     if(!self.dynamicAnimator){
         self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithCollectionViewLayout:self];
@@ -45,21 +63,27 @@
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect{
     
-    // return [super layoutAttributesForElementsInRect:rect];
+    if(![self isDynamicsSupported]){
+        return [super layoutAttributesForElementsInRect:rect];
+    }
     
     return [self.dynamicAnimator itemsInRect:rect];
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    // return [super layoutAttributesForItemAtIndexPath:indexPath];
+    if(![self isDynamicsSupported]){
+        return [super layoutAttributesForItemAtIndexPath:indexPath];
+    }
     
     return [self.dynamicAnimator layoutAttributesForCellAtIndexPath:indexPath];
 }
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
     
-    // return [super shouldInvalidateLayoutForBoundsChange:newBounds];
+    if(![self isDynamicsSupported]){
+        return [super shouldInvalidateLayoutForBoundsChange:newBounds];
+    }
     
     UIScrollView *scrollView = self.collectionView;
     CGFloat scrollDelta = newBounds.origin.y - scrollView.bounds.origin.y;

@@ -113,7 +113,7 @@
         center.y += actualScroll;
         currentItem.center = center;
         
-        [self.dynamicAnimator updateItemFromCurrentState:currentItem];
+        [self.dynamicAnimator updateItemUsingCurrentState:currentItem];
         
     }
     
